@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header-pag">
+    <h1><strong><img src="shopping-bag.png" alt="" width="40px"></strong></h1>
+    <h1>API CEP e CARRINHO DE COMPRA </h1>
+    <nav class="nav-search">
+      <label for="input-search"><input id="input-search" type="search" placeholder="Pesquisar..."></label>
+      <button class="button-search"> Buscar</button>
+    </nav>
+  </header>
+  <section class="container">
+    <section class="items">
+      <p class="produtos"><strong>Escolha Seus Produtos</strong></p>
+      <p class="loading">loading...</p>
+    </section>
+    <section class="cart">
+      <span class="cart__title">Carrinho de compras</span>
+      <button class="empty-cart">Esvaziar carrinho</button>
+      <ol class="cart__items"></ol>
+      <p class="mensagem_total"><strong>Preço total: R$ <span class="total-price"></span></strong></p>
+      
+    
+
+    
+    <!-- Informações do usuário -->
+    <span class="cart__title">Digite seus dados</span>
+    <br>
+    <section class="container">
+   
+    <form id="checkout-form">
+    
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <br>
+      
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" required>
+        <button id="buscar-cep">Buscar CEP</button>
+        <br>
+        <br>
+        <div id="endereco-info">
+            <p><strong>Logradouro:</strong> <span id="logradouro"></span></p>
+            <p><strong>Bairro:</strong> <span id="bairro"></span></p>
+            <p><strong>Cidade:</strong> <span id="cidade"></span></p>
+            <p><strong>Estado:</strong> <span id="estado"></span></p>
+            <p><strong>CEP:</strong> <span id="CEP"></span></p>
+            
+        </div>
+        <button class=>Concluir sua compra</button>
+    </section>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
